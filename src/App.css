@@ -1,11 +1,18 @@
 .nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.nav__items--item {
+  display: flex;
+  padding: 0px 5rem;
 }
 
 .nav__items {
   display: flex;
   list-style: none;
+  padding: 0px 3rem;
 }
 
 .App {
