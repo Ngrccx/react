@@ -1,16 +1,19 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Productos from './components/Productos';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './containers/ItemListContainer';
+import ItemCount from './components/ItemCount'
 
 const App = () => {
   return (
     <>
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar/>
       </div>
       <ItemListContainer greetings='Hola Mundo'/>
+      <ItemCount stock='5' initial='1' />
       <div>
+        item
         <Productos name='producto 1' value={1} />
       </div>
       <div>
